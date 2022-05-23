@@ -1,0 +1,21 @@
+
+
+
+
+.menuLink {
+    background: linear-gradient(45deg, #beb3b3, #f8e69f);
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #0f0f10;
+    color: #0c0c0c;
+    pointer-events: auto;
+    line-height: 40px;
+    position: relative;
+    padding: 0 50px;
+    box-sizing: border-box;
+    margin: 0;
+    user-select: none;
+    overflow: hidden;
+    border-radius: 50px;
+
+}

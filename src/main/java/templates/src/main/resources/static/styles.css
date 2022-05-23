@@ -1,0 +1,39 @@
+
+.button1 {background-image: linear-gradient(to right, #EC6F66 0%, #F3A183  51%, #EC6F66  100%)}
+.button1 {
+    margin: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.button1:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.button2 {background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%)}
+.button2 {
+    margin: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #e7ecf5;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 500px;
+    display: block;
+}
+
+.button2:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
