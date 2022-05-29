@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
-    <title>Add client</title>
+    <title>Add room</title>
     <style>
         body {
             min-height: 81.4vh;
-            background: linear-gradient(0deg, #fff, rgb(211, 245, 161));
+            background: linear-gradient(0deg, #fff, rgb(161, 245, 220));
             font-family: 'Rubik', sans-serif;
             background-repeat: no-repeat;
             overflow: hidden
@@ -45,7 +45,7 @@
             padding: 10px 20px;
             font-size: 18px;
             font-weight: bold;
-            background-color: #5ce047;
+            background-color: #9aafe5;
             border: none;
             color: white;
             margin-top: 20px;
@@ -68,36 +68,28 @@
 <div class="container">
     <div class="registration-form">
 
-        <h4 align="center"> Add new client</h4>
+        <h4 align="center"> Add new Room</h4>
         <div class="label">
 
-            <form name="addClient" action="" method="POST" >
+            <form name="addRoom" action="" method="POST" >
 
                 <div align="center" class="form-group">
-                    <input type="text" placeholder="User name" class="form-control item" <@spring.formInput "form.name" "" "text" />  </div>
+                    <input type="text" placeholder="Room name" class="form-control item" <@spring.formInput "form.name" "" "text" />  </div>
 
                 <div align="center" class="form-group">
-                    <input type="text" placeholder="Surname" class="form-control item" <@spring.formInput "form.surname" "" "text" /></div>
+                    <input type="text" placeholder="Comfort" class="form-control item" <@spring.formInput "form.comfort" "" "text" /></div>
 
                 <div align="center" class="form-group">
-                    <input type="text" placeholder="Patronymic" class="form-control item" <@spring.formInput "form.patronymic" "" "text" /></div>
-                <div align="center" >
-                    Date of Birthday:<@spring.formInput "form.birthday" "" "date" /></div>
-                <br>
-                <div align="center" class="form-group">
-                    <input type="text" placeholder=" Phone number"  class="form-control item" <@spring.formInput "form.phoneNumber" "" "text" /></div>
+                    <input type="text" placeholder="Capacity" class="form-control item" <@spring.formInput "form.capacity" "" "text" /></div>
 
                 <div align="center" class="form-group">
-                    <input type="text" placeholder="Room in a hotel" class="form-control item"  <@spring.formInput "form.roomInAHotel" "" "text" /></div>
+                    <input type="text" placeholder="Price"  class="form-control item" <@spring.formInput "form.price" "" "text" /></div>
 
-                <div align="center" >
-                    Discount:<@spring.formSingleSelect "form.discount", discounts, " " /></div>
-                <br>
                 <div align="center" class="form-group">
                     <input type="text" placeholder="Description" class="form-control item"  <@spring.formInput "form.description" "" "text" />
                 </div>
 
-                <input type=submit value="Add" class="btn btn-block create-account">
+                <input type=submit value="Add room" class="btn btn-block create-account">
 
 
                 <br>

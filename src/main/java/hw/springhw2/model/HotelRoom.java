@@ -6,6 +6,9 @@ package hw.springhw2.model;/*
   @since 28.11.2021 - 18.44
 */
 
+import io.swagger.annotations.ApiModelProperty;
+
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class HotelRoom {
@@ -15,6 +18,15 @@ public class HotelRoom {
     private String comfort;
     private String capacity;
     private int price;
+    @ApiModelProperty(value = "Information about client was created at",
+            name = "createdAt",
+            required = true)
+    private LocalDateTime createdAt;
+
+    @ApiModelProperty(value = "Information about client was updated at",
+            name = "updatedAt",
+            required = true)
+    private LocalDateTime updatedAt;
 
 
     public HotelRoom() {}
@@ -34,21 +46,25 @@ public class HotelRoom {
     }
 
 
+
     public HotelRoom(String id,
                      String name,
                      String description,
                      String comfort,
                      String capacity,
-                     int price
-                    ) {
+                     int price,
+                     LocalDateTime createdAt,
+                     LocalDateTime updatedAt) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.comfort = comfort;
         this.capacity = capacity;
         this.price = price;
-
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
     }
+
 
     public String getId() {
         return id;
@@ -98,6 +114,21 @@ public class HotelRoom {
         this.price = price;
     }
 
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
 
     @Override
     public boolean equals(Object o) {
